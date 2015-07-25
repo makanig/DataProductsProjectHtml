@@ -46,7 +46,7 @@
 
   </div>
 </section>
-<section class="slide class" id="id">
+<section class="slide " id="slide-2">
   <div>
     <h2>Results</h2>
     <ol>
@@ -58,7 +58,7 @@
 
   </div>
 </section>
-<section class="slide class" id="id">
+<section class="slide " id="slide-3">
   <div>
     <h2>50 year forecast server code run output</h2>
     <pre><code>##   Year     GDP   Health
@@ -75,11 +75,13 @@
 <section class="slide " id="slide-4">
   <div>
     <h2>Forecasting Code snippet</h2>
-    <pre><code class="r">  tsHlth &lt;-  ts(dat$Health, start = 2000)
+    <pre><code>
+  tsHlth &lt;-  ts(dat$Health, start = 2000)
   tsGdp &lt;-  ts(dat$GDP, start = 2000)
 
   fcastHlth &lt;- data.frame(forecast(tsHlth,  h = numYears, level=95, allow.multiplicative.trend=TRUE))
   fcastGdp &lt;- data.frame(forecast(tsGdp,  h = numYears, level=95, allow.multiplicative.trend=TRUE))
+
 </code></pre>
 
   </div>
@@ -87,7 +89,7 @@
 <section class="slide " id="slide-5">
   <div>
     <h2>Conclusion</h2>
-    <p>Healthcare costs increase is unsustainable !!</p>
+    <p>Healthcare spending is unsustainable !!</p>
 
   </div>
 </section>
